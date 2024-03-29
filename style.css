@@ -1,7 +1,7 @@
 :root {
-  --color-dark: rgb(14, 14, 14);
-  --color-dark2: rgb(32, 32, 32);
-  --color-dark3: rgb(22, 22, 22);
+  --color-dark: #a9a9a9;
+  --color-dark2: #4682b4;
+  --color-dark3: #b0c4de;
   --color-white: #fff;
   --color-green: rgb(103, 195, 80);
   --color-green2: rgb(51, 149, 26);
@@ -60,7 +60,7 @@ body {
 }
 
 #btn-new:hover {
-  background-color: var(--color-dark2);
+  background-color: #c0c0c0;
 }
 
 #to-do-list {
@@ -74,5 +74,31 @@ body {
   font-size: 1.4rem;
   text-transform: capitalize;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+#to-do-list li:hover {
+  background-color: var(--color-dark3);
+  transition: 0.4s;
+  border-radius: 1rem;
+  padding-left: 1rem;
+}
+
+#btn-ok {
+  border: none;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  padding: 0.4rem 0.8rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#btn-ok:hover {
+  background-color: var(--color-green2);
 }
